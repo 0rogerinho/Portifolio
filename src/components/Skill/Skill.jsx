@@ -7,11 +7,11 @@ const Skill = () => {
         skill
       </h1>
       <div className="w-full flex flex-wrap gap-3 justify-center md:gap-0 md:justify-between">
-        <Tecnologic srcImg="javascript.svg" />
-        <Tecnologic srcImg="css.svg" />
-        <Tecnologic srcImg="html.svg" />
-        <Tecnologic srcImg="tailwind.svg" />
-        <Tecnologic srcImg="react.svg" />
+        <Tecnologic srcImg="/javascript.svg" />
+        <Tecnologic srcImg="/css.svg" />
+        <Tecnologic srcImg="/html.svg" />
+        <Tecnologic srcImg="/tailwind.svg" />
+        <Tecnologic srcImg="/react.svg" />
       </div>
     </section>
   );

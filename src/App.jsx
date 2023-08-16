@@ -1,4 +1,3 @@
-import './App.css';
 import Background from './Background';
 import MyProjects from './components/MyProjects/MyProjects';
 

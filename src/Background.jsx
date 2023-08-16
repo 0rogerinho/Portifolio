@@ -4,7 +4,7 @@ import Skill from './components/Skill/Skill';
 
 const Background = () => {
   return (
-    <div className="w-full h-1/2 xg:h-[956px] bg-[url(ImagemDeFundo.png)]">
+    <div className="w-full h-1/2 xg:h-[956px] bg-[url(/ImagemDeFundo.png)]">
       <Header />
       <About />
       <Skill />
