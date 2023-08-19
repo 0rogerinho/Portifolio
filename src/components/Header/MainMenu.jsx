@@ -1,13 +1,23 @@
 import React, { useState } from 'react';
 
+const nav = ['home', 'about', 'skill', 'projects'];
+
+const Link = ({ title }) => {
+  return (
+    <li className="group">
+      {title}
+      <span className="block m-auto w-1 h-1 rounded-lg bg-white group-hover:w-full transition-all duration-300"></span>
+    </li>
+  );
+};
+
 export const MainMenu = () => {
   return (
     <nav className="hidden md:block">
-      <ul className="flex gap-[3.125rem] text-[1.25rem] md:text-lg font-semibold">
-        <li>Home</li>
-        <li>About</li>
-        <li>Skill</li>
-        <li>Projects</li>
+      <ul className="flex gap-[3.125rem] text-[1.25rem] md:text-lg font-semibold cursor-pointer">
+        {nav.map((title) => {
+          return <Link key={title} title={title} />;
+        })}
       </ul>
     </nav>
   );

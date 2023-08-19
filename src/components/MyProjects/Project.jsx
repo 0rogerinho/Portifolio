@@ -14,7 +14,7 @@ export const Project = ({
       <div className="flex flex-col gap-6">
         <h1 className="text-lg md:text-3xl font-semibold">{title}</h1>
         <p
-          className={`text-[.9375rem] md:text-2xl xl:text-3xl text-${itemsPosition}`}
+          className={`text-[.9375rem] md:text-xl xl:text-2xl text-${itemsPosition}`}
         >
           {text}
         </p>
