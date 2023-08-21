@@ -1,11 +1,19 @@
 import React, { useState } from 'react';
+import { Link as ScrollLink } from 'react-scroll';
 
-const nav = ['home', 'about', 'skill', 'projects'];
+const nav = ['Home', 'About', 'Skill', 'Projects'];
 
-const Link = ({ title }) => {
+const CustomLink = ({ title, target }) => {
   return (
     <li className="group">
-      {title}
+      <ScrollLink
+        to={target}
+        smooth={true}
+        duration={500}
+        className="cursor-pointer"
+      >
+        {title}
+      </ScrollLink>
       <span className="block m-auto w-1 h-1 rounded-lg bg-white group-hover:w-full transition-all duration-300"></span>
     </li>
   );
@@ -14,9 +22,9 @@ const Link = ({ title }) => {
 export const MainMenu = () => {
   return (
     <nav className="hidden md:block">
-      <ul className="flex gap-[3.125rem] text-[1.25rem] md:text-lg font-semibold cursor-pointer">
+      <ul className="flex gap-[3.125rem] text-[1.25rem] md:text-base lg:text-lg font-semibold cursor-pointer">
         {nav.map((title) => {
-          return <Link key={title} title={title} />;
+          return <CustomLink key={title} title={title} target={title} />;
         })}
       </ul>
     </nav>

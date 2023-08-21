@@ -1,5 +1,6 @@
 import React from 'react';
 import Typewriter from 'typewriter-effect';
+import { Element } from 'react-scroll';
 import {
   AiFillGithub,
   AiOutlineWhatsApp,
@@ -9,63 +10,65 @@ import {
 
 const About = () => {
   return (
-    <div className="flex justify-between  gap-12  xl:mt-[6.25rem] xl:gap-0 px-[5%] xl:px-[8%] 2xl:px-[20%]">
-      <section className=" md:w-[550px] xl:w-[600px] mt-[1.1875rem] flex flex-col gap-[1.8125rem] md:gap-[2.625rem]">
-        <h1 className="md:text-2xl xl:text-4xl font-semibold font-Montserrat">
-          <Typewriter
-            options={{
-              strings: ['Desenvolvedor Front End'],
-              autoStart: true,
-              loop: true,
-              delay: 75,
-            }}
-          />
-        </h1>
-        <article>
-          <p className="text-sm md:text-xl tracking-wider font-Lato">
-            Há 9 meses, venho me dedicando todos os dias em programação. Desde o
-            início, não houve um único dia em que não tenha continuado a
-            aprender, com o objetivo de me tornar um desenvolvedor Full Stack
-            excepcional. Meu foco é resolver problemas do mercado
-          </p>
-        </article>
-        <button className="w-[6.4375rem] md:w-[8.4375rem] lg:w-[15.125rem] py-[.3125rem] md:py-[.4375rem] md:px-[3.375rem] lg:px-[6.0625rem] rounded-[3.125rem] lg:py-[.625rem] bg-gradient-to-t from-[#3C1B46] to-[#9C3C5A] transition-all duration-300 hover:scale-110">
-          <a
-            className="text-lg md:text-lg lg:text-3xl font-semibold font-Montserrat"
-            href="#"
-          >
-            CV
-          </a>
-        </button>
-      </section>
-      <div className=" flex items-center justify-between">
-        <img className="hidden xl:block" src="avatarUser.png" alt="Luan" />
-        <nav>
-          <ul className="flex flex-col xl:mb-36 gap-5 md:gap-10 xl:gap-[4rem]">
-            <li>
-              <a href="#">
-                <AiFillGithub className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <AiOutlineWhatsApp className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <AiOutlineInstagram className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
-              </a>
-            </li>
-            <li>
-              <a href="#">
-                <AiOutlineLinkedin className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
-              </a>
-            </li>
-          </ul>
-        </nav>
+    <Element name="About">
+      <div className="flex justify-between gap-12 xl:gap-0 pt-12 md:pt-20 xl:pt-[165px] px-[5%] xl:px-[8%] 2xl:px-[20%]">
+        <section className=" md:w-[550px] xl:w-[600px] mt-[1.1875rem] flex flex-col gap-[1.8125rem] md:gap-[2.625rem]">
+          <h1 className="md:text-2xl xl:text-4xl font-semibold font-Montserrat">
+            <Typewriter
+              options={{
+                strings: ['Desenvolvedor Front End'],
+                autoStart: true,
+                loop: true,
+                delay: 75,
+              }}
+            />
+          </h1>
+          <article>
+            <p className="text-sm md:text-xl tracking-wider font-Lato">
+              Há 9 meses, venho me dedicando todos os dias em programação. Desde
+              o início, não houve um único dia em que não tenha continuado a
+              aprender, com o objetivo de me tornar um desenvolvedor Full Stack
+              excepcional. Meu foco é resolver problemas do mercado
+            </p>
+          </article>
+          <button className="w-[6.4375rem] md:w-[8.4375rem] lg:w-[15.125rem] py-[.3125rem] md:py-[.4375rem] md:px-[3.375rem] lg:px-[6.0625rem] rounded-[3.125rem] lg:py-[.625rem] bg-gradient-to-t from-[#3C1B46] to-[#9C3C5A] transition-all duration-300 hover:scale-110">
+            <a
+              className="text-lg md:text-lg lg:text-3xl font-semibold font-Montserrat"
+              href="#"
+            >
+              CV
+            </a>
+          </button>
+        </section>
+        <div className=" flex items-center justify-between">
+          <img className="hidden xl:block" src="avatarUser.png" alt="Luan" />
+          <nav>
+            <ul className="flex flex-col xl:mb-36 gap-5 md:gap-10 xl:gap-[4rem]">
+              <li>
+                <a href="#">
+                  <AiFillGithub className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <AiOutlineWhatsApp className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <AiOutlineInstagram className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <AiOutlineLinkedin className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
-    </div>
+    </Element>
   );
 };
 
