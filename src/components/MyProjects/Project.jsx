@@ -6,12 +6,13 @@ export const Project = ({
   srcImg,
   itemsPosition,
   flexReverse,
+  link,
 }) => {
   return (
     <div
       className={`flex flex-col lg:flex-row gap-5 xl:gap-0 items-center ${flexReverse}`}
     >
-      <div className="flex flex-col gap-6">
+      <div className="lg:w-[70%] flex flex-col gap-6">
         <h1 className="text-lg md:text-3xl font-semibold">{title}</h1>
         <p
           className={`text-[.9375rem] md:text-xl xl:text-2xl text-${itemsPosition}`}
@@ -19,11 +20,19 @@ export const Project = ({
           {text}
         </p>
       </div>
-      <img
-        className="block w-[11.9375rem] h-[6.1875rem] md:w-[17.125rem] md:h-[8.875rem] xl:w-[30.375rem] xl:h-[15.0625rem]"
-        src={srcImg}
-        alt="Project"
-      />
+      <a
+        className={`my-14 lg:my-0 ${
+          flexReverse == 'lg:flex-row-reverse' ? 'lg:mr-12' : 'lg:m-12'
+        }`}
+        target="_blank"
+        href={`${link}`}
+      >
+        <img
+          className="block hover:scale-110 transition-all duration-500 cursor-pointer w-[100%] h-[170px] md:h-[260px] lg:h-[200px] xl:h-[230px] 2xl:h-[270px]"
+          src={srcImg}
+          alt="Project"
+        />
+      </a>
     </div>
   );
 };

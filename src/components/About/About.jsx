@@ -9,13 +9,12 @@ import {
 
 const About = () => {
   return (
-    <div className="flex justify-between px-[1.1875rem] gap-12 md:px-11 xl:px-[7.5625rem] xl:mt-[6.25rem] xl:gap-0">
-      <section className=" md:w-[550px] xl:w-[700px] mt-[1.1875rem] flex flex-col gap-[1.8125rem] md:gap-[2.625rem]">
-        <h1 className="text-[1.25rem] md:text-3xl xl:text-4xl font-semibold font-Montserrat">
+    <div className="flex justify-between  gap-12  xl:mt-[6.25rem] xl:gap-0 px-[5%] xl:px-[8%] 2xl:px-[20%]">
+      <section className=" md:w-[550px] xl:w-[600px] mt-[1.1875rem] flex flex-col gap-[1.8125rem] md:gap-[2.625rem]">
+        <h1 className="md:text-2xl xl:text-4xl font-semibold font-Montserrat">
           <Typewriter
-            className="text-[1.25rem] md:text-3xl xl:text-3xl font-semibold font-Montserrat"
             options={{
-              strings: ['Eu sou desenvolvedor Front End'],
+              strings: ['Desenvolvedor Front End'],
               autoStart: true,
               loop: true,
               delay: 75,

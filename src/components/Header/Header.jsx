@@ -3,10 +3,10 @@ import { MainMenu, MenuMobile } from './MainMenu';
 
 const Header = () => {
   return (
-    <header className="w-full relative px-[1.25rem] py-[9px] md:px-11 xl:px-[123.5px]  ">
+    <header className="w-full relative py-[9px] px-[5%] xl:px-[8%] 2xl:px-[20%]  ">
       <div className="w-full flex justify-between items-center py-[.5625rem]">
-        <h1 className="text-lg md:text-[1.875rem] xl:text-[2.5rem] font-semibold">
-          0rogerinho
+        <h1 className="text-lg md:text-[1.875rem] xl:text-4xl font-semibold">
+          Luan da silva
         </h1>
         <MainMenu />
         <MenuMobile />
