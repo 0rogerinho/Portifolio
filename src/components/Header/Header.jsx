@@ -18,18 +18,18 @@ const Header = () => {
 
   const headerClass = ` ${
     scrollBackground
-      ? 'w-[80%] rounded-full border border-white border-opacity-50 m-auto inset-x-0 top-4 bg-[#100F27] bg-opacity-90'
+      ? 'w-[80%] 2xl:w-[50%] 3xl rounded-full border border-white border-opacity-50 m-auto inset-x-0 top-4 bg-[#100F27] bg-opacity-90'
       : 'w-full border inset-x-0 top-0 m-auto border-black border-opacity-0 '
   }`;
 
   return (
     <Element name="Home">
       <header
-        className={`${headerClass} z-50 left transition-all duration-700 fixed py-[9px] px-[5%] xl:px-[8%] 2xl:px-[20%]`}
+        className={`${headerClass} z-50 left transition-all duration-700 fixed py-[9px] px-[5%] xl:px-[8%] 2xl:px-[2%]`}
       >
         <div className="w-full flex justify-between items-center py-[.5625rem]">
-          <h1 className="text-lg md:text-xl xl:text-4xl font-semibold">
-            Luan da Silva
+          <h1 className="text-lg md:text-xl xl:text-3xl font-semibold">
+            DevRogerinho
           </h1>
           <MainMenu />
           <MenuMobile />

@@ -5,7 +5,7 @@ const MyProjects = () => {
   return (
     <Element name="Projects">
       <div className=" w-full my-[70px] flex flex-col px-[5%] xl:px-[8%] 2xl:px-[20%]">
-        <h1 className="text-lg md:text-4xl font-semibold mb-12">Projects</h1>
+        <h1 className="text-lg md:text-3xl font-semibold mb-12">Projects</h1>
 
         <Project
           title="Git Info Search"
