@@ -10,7 +10,7 @@ export const Project = ({
 }) => {
   return (
     <div
-      className={`flex flex-col lg:flex-row gap-5 xl:gap-0 items-center ${flexReverse}`}
+      className={`flex flex-col lg:flex-row gap-5 xl:gap-0 items-center mb-[1.875rem] lg:mb-28 xl:mb-48 ${flexReverse}`}
     >
       <div className="lg:w-[70%] flex flex-col gap-6">
         <h1 className="text-lg md:text-3xl font-semibold">{title}</h1>

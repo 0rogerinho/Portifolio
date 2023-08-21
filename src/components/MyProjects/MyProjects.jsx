@@ -4,7 +4,9 @@ import { Element } from 'react-scroll';
 const MyProjects = () => {
   return (
     <Element name="Projects">
-      <div className=" w-full my-[70px] flex flex-col gap-[1.875rem] lg:gap-28 xl:gap-48 px-[5%] xl:px-[8%] 2xl:px-[20%]">
+      <div className=" w-full my-[70px] flex flex-col px-[5%] xl:px-[8%] 2xl:px-[20%]">
+        <h1 className="text-lg md:text-4xl font-semibold mb-12">Projects</h1>
+
         <Project
           title="Git Info Search"
           text="É um site que simplifica a busca e visualização de informações de usuários no GitHub, fácil de usar, onde os usuários podem simplesmente digitar o nome de usuário do GitHub que desejam pesquisar. Em segundos, o GitInfoSearch varre a vasta base de dados do GitHub e fornece uma visão detalhada das informações públicas disponíveis sobre o perfil do usuário pesquisado.

@@ -18,8 +18,8 @@ const Header = () => {
 
   const headerClass = ` ${
     scrollBackground
-      ? 'w-[80%] rounded-full border border-white m-auto inset-x-0 top-4 bg-[#100F27] bg-opacity-90'
-      : 'w-full'
+      ? 'w-[80%] rounded-full border border-white border-opacity-50 m-auto inset-x-0 top-4 bg-[#100F27] bg-opacity-90'
+      : 'w-full border inset-x-0 top-0 m-auto border-black border-opacity-0 '
   }`;
 
   return (

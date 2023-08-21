@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
-const nav = ['Home', 'About', 'Skill', 'Projects'];
+const nav = ['Home', 'About', 'Skills', 'Projects'];
 
 const CustomLink = ({ title, target }) => {
   return (
