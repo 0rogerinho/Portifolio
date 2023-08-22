@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
 
 const nav = ['Home', 'About', 'Skills', 'Projects'];
@@ -33,26 +33,44 @@ export const MainMenu = () => {
 
 export const MenuMobile = () => {
   const [openMenu, setOpenMenu] = useState(false);
+  const [scrollBackground, setScrollBackground] = useState(false);
+
+  const handleScroll = () => {
+    setScrollBackground(window.scrollY > 50);
+  };
+
+  useEffect(() => {
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleClickMenu = (event) => {
     event.preventDefault();
     setOpenMenu(!openMenu);
   };
 
+  const headerClass = `${scrollBackground ? '-rotate-90 mt-2' : ''}`;
+
   return (
     <nav className="md:hidden">
-      <div onClick={handleClickMenu} className="flex flex-col gap-[.1875rem]">
+      <div
+        onClick={handleClickMenu}
+        className="group flex flex-col gap-[.1875rem]"
+      >
         <div className="w-[1.0625rem] h-[.125rem] bg-white"></div>
         <div className="w-[1.0625rem] h-[.125rem] bg-white"></div>
         <div
-          className={`w-[1.0625rem] h-[.125rem] bg-white transition duration-700 ${
-            openMenu ? '-rotate-45 mt-[.3125rem]' : ''
+          className={`w-[1.0625rem] block h-[.125rem] bg-white group-transition duration-500 ${
+            openMenu ? headerClass : ''
           }`}
         ></div>
       </div>
       <div
         className={`w-[5.875rem] p-[1.0625rem] absolute right-10 rounded-md rounded-tr-none bg-gradient-to-t to-[#000A1D] from-[rgb(0,0,0,0.7)] transition:block duration-700 ${
-          openMenu ? 'block' : 'hidden'
+          openMenu ? 'hidden' : 'block'
         }`}
       >
         <ul className="flex flex-col items-center gap-[1.5625rem] text-[.9375rem] font-semibold">
