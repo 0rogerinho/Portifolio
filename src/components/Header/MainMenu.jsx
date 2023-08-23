@@ -40,7 +40,7 @@ export const MainMenu = () => {
           })}
         </ul>
       </nav>
-      {}
+      {/*MenuMobile*/}
       <nav className={`md:hidden ${headerClass}`}>
         <div
           onClick={handleClickMenu}
@@ -64,7 +64,7 @@ export const MainMenu = () => {
           })}
         </ul>
       </nav>
-      {}
+      {/*Links Menu Mobile*/}
       <nav
         onClick={handleClickMenu}
         className={`group md:hidden ${
