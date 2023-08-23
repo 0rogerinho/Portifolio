@@ -9,7 +9,7 @@ const Header = () => {
   const [scrollBackground, setScrollBackground] = useState(false);
 
   const handleScroll = () => {
-    setScrollBackground(window.scrollY > 50);
+    setScrollBackground(window.scrollY > 10);
   };
 
   useEffect(() => {
@@ -29,7 +29,7 @@ const Header = () => {
     <Element name="Home">
       <UserContext.Provider value={{ openMenu, setOpenMenu, scrollBackground }}>
         <header
-          className={`z-50 transition-all fixed rounde duration-700 m-auto inset-x-0 py-[9px] px-[5%] md:px-[2%] xl:px-[4%] ${headerClass}`}
+          className={`z-50 transition-all fixed rounde duration-700 m-auto inset-x-0 py-[9px] px-[5%]  xl:px-[8%] ${headerClass}`}
         >
           <div className="w-full flex justify-between items-center py-[.5625rem]">
             <h1 className="text-lg md:text-xl xl:text-3xl font-semibold">
