@@ -1,7 +1,11 @@
-import React, { useState, useEffect } from 'react';
-import { MainMenu, MenuMobile } from './MainMenu';
+import React, { useState, useEffect, createContext } from 'react';
+import { CustomLink, MainMenu, nav } from './MainMenu';
 import { Element } from 'react-scroll';
+
+export const UserContext = createContext();
+
 const Header = () => {
+  const [openMenu, setOpenMenu] = useState(false);
   const [scrollBackground, setScrollBackground] = useState(false);
 
   const handleScroll = () => {
@@ -15,26 +19,35 @@ const Header = () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
-
   const headerClass = ` ${
     scrollBackground
-      ? 'w-[80%] 2xl:w-[50%] 2xl:px-[2%] rounded-full border border-white border-opacity-50 m-auto inset-x-0 top-4 bg-[#100F27] bg-opacity-90'
-      : 'w-full border inset-x-0 top-0 m-auto border-black border-opacity-0 2xl:px-[20%]'
+      ? `w-[80%] flex rounded-[2rem] items-center justify-center flex-col top-4 border border-white border-opacity-50 bg-[#100F27] bg-opacity-90 2xl:w-[50%] 2xl:px-[2%]`
+      : 'w-full top-0 border border-black border-opacity-0 2xl:px-[20%]'
   }`;
 
   return (
     <Element name="Home">
-      <header
-        className={`${headerClass} z-50 left transition-all duration-700 fixed py-[9px] px-[5%] xl:px-[8%]`}
-      >
-        <div className="w-full flex justify-between items-center py-[.5625rem]">
-          <h1 className="text-lg md:text-xl xl:text-3xl font-semibold">
-            DevRogerinho
-          </h1>
-          <MainMenu />
-          <MenuMobile />
-        </div>
-      </header>
+      <UserContext.Provider value={{ openMenu, setOpenMenu, scrollBackground }}>
+        <header
+          className={`z-50 transition-all fixed rounde duration-700 m-auto inset-x-0 py-[9px] px-[5%] md:px-[2%] xl:px-[4%] ${headerClass}`}
+        >
+          <div className="w-full flex justify-between items-center py-[.5625rem]">
+            <h1 className="text-lg md:text-xl xl:text-3xl font-semibold">
+              DevRogerinho
+            </h1>
+            <MainMenu />
+          </div>
+          <ul
+            className={`flex flex-col items-center gap-[1.5625rem] text-[.9375rem] font-semibold w-[5.875rem] p-[1.0625rem] right-10 duration-700 ${
+              openMenu ? 'block md:hidden' : 'hidden'
+            } ${scrollBackground ? 'opacity-100' : 'hidden'}`}
+          >
+            {nav.map((title) => {
+              return <CustomLink key={title} title={title} target={title} />;
+            })}
+          </ul>
+        </header>
+      </UserContext.Provider>
     </Element>
   );
 };
