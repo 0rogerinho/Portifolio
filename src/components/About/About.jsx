@@ -3,7 +3,7 @@ import Typewriter from 'typewriter-effect';
 import { Element } from 'react-scroll';
 import {
   AiFillGithub,
-  AiOutlineWhatsApp,
+  AiFillBehanceCircle,
   AiOutlineInstagram,
   AiOutlineLinkedin,
 } from 'react-icons/ai';
@@ -45,22 +45,22 @@ const About = () => {
           <nav>
             <ul className="flex flex-col xl:mb-36 gap-5 md:gap-10 xl:gap-[4rem]">
               <li>
-                <a href="#">
+                <a href="https://github.com/0rogerinho">
                   <AiFillGithub className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
                 </a>
               </li>
               <li>
-                <a href="#">
-                  <AiOutlineWhatsApp className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
+                <a href="https://www.behance.net/luansilva99">
+                  <AiFillBehanceCircle className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.instagram.com/devrogerinho/">
                   <AiOutlineInstagram className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/luan-silva-a1a88225a/">
                   <AiOutlineLinkedin className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
                 </a>
               </li>
