@@ -33,7 +33,7 @@ const Header = () => {
         >
           <div className="w-full flex justify-between items-center py-[.5625rem]">
             <h1 className="text-lg md:text-xl xl:text-3xl font-semibold">
-              DevRogerinho
+              Luan Silva
             </h1>
             <MainMenu />
           </div>
