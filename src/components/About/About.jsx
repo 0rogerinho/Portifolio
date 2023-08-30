@@ -25,20 +25,19 @@ const About = () => {
           </h1>
           <article>
             <p className="text-sm md:text-xl tracking-wider font-Lato">
-              Há 9 meses, venho me dedicando todos os dias em programação. Desde
-              o início, não houve um único dia em que não tenha continuado a
-              aprender, com o objetivo de me tornar um desenvolvedor Full Stack
-              excepcional. Meu foco é resolver problemas do mercado
+              Venho me dedicando todos os dias em programação. Desde o início,
+              não houve um único dia em que não tenha continuado a aprender, com
+              o objetivo de me tornar um desenvolvedor Full Stack excepcional.
+              Meu foco é resolver problemas do mercado
             </p>
           </article>
-          <button className="w-[6.4375rem] md:w-[8.4375rem] lg:w-[15.125rem] py-[.3125rem] md:py-[.4375rem] md:px-[3.375rem] lg:px-[6.0625rem] rounded-[3.125rem] lg:py-[.625rem] bg-gradient-to-t from-[#3C1B46] to-[#9C3C5A] transition-all duration-300 hover:scale-110">
-            <a
-              className="text-lg md:text-lg lg:text-3xl font-semibold font-Montserrat"
-              href="#"
-            >
-              CV
-            </a>
-          </button>
+          <a
+            className="text-lg md:text-lg lg:text-3xl font-semibold font-Montserrat w-[6.4375rem] md:w-[8.4375rem] lg:w-[15.125rem] py-[.3125rem] md:py-[.4375rem] md:px-[3.375rem] lg:px-[6.0625rem] rounded-[3.125rem] lg:py-[.625rem] bg-gradient-to-t from-[#3C1B46] to-[#9C3C5A] transition-all duration-300 hover:scale-110"
+            href="#"
+            target="_blank"
+          >
+            CV
+          </a>
         </section>
         <div className=" flex items-center justify-between">
           <img className="hidden xl:block" src="avatarUser.png" alt="Luan" />
@@ -46,22 +45,34 @@ const About = () => {
             <ul className="flex flex-col xl:mb-36 gap-5 md:gap-10 xl:gap-[4rem]">
               <li>
                 <a href="https://github.com/0rogerinho">
-                  <AiFillGithub className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
+                  <AiFillGithub
+                    className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110"
+                    target="_blank"
+                  />
                 </a>
               </li>
               <li>
                 <a href="https://www.behance.net/luansilva99">
-                  <AiFillBehanceCircle className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
+                  <AiFillBehanceCircle
+                    className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110"
+                    target="_blank"
+                  />
                 </a>
               </li>
               <li>
                 <a href="https://www.instagram.com/devrogerinho/">
-                  <AiOutlineInstagram className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
+                  <AiOutlineInstagram
+                    className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110"
+                    target="_blank"
+                  />
                 </a>
               </li>
               <li>
                 <a href="https://www.linkedin.com/in/luan-silva-a1a88225a/">
-                  <AiOutlineLinkedin className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110" />
+                  <AiOutlineLinkedin
+                    className="cursor-pointer text-[1.375rem] md:text-3xl xl:text-[2.4375rem] hover:text-[#1EA6DB] transition-all duration-200 hover:scale-110"
+                    target="_blank"
+                  />
                 </a>
               </li>
             </ul>

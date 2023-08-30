@@ -12,7 +12,7 @@ const MyProjects = () => {
           text="É um site que simplifica a busca e visualização de informações de usuários no GitHub, fácil de usar, onde os usuários podem simplesmente digitar o nome de usuário do GitHub que desejam pesquisar. Em segundos, o GitInfoSearch varre a vasta base de dados do GitHub e fornece uma visão detalhada das informações públicas disponíveis sobre o perfil do usuário pesquisado.
 "
           srcImg="searchGithub.png"
-          link="https://github-user-search-app-nu.vercel.app/"
+          link="https://github-user-search-app-phi-five.vercel.app/"
         />
         <Project
           title="Mined Just Store"
