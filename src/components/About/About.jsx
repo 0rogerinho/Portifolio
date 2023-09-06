@@ -32,7 +32,7 @@ const About = () => {
             </p>
           </article>
           <a
-            className="text-lg md:text-lg lg:text-3xl font-semibold font-Montserrat w-[6.4375rem] md:w-[8.4375rem] lg:w-[15.125rem] py-[.3125rem] md:py-[.4375rem] md:px-[3.375rem] lg:px-[6.0625rem] rounded-[3.125rem] lg:py-[.625rem] bg-gradient-to-t from-[#3C1B46] to-[#9C3C5A] transition-all duration-300 hover:scale-110"
+            className="text-lg text-center md:text-lg lg:text-3xl font-semibold font-Montserrat w-[6.4375rem] md:w-[8.4375rem] lg:w-[15.125rem] py-[.3125rem] md:py-[.4375rem] md:px-[3.375rem] lg:px-[6.0625rem] rounded-[3.125rem] lg:py-[.625rem] bg-gradient-to-t from-[#3C1B46] to-[#9C3C5A] transition-all duration-300 hover:scale-110"
             href="https://drive.google.com/file/d/1PlRNp3wQR5uFKkgELkV6BQLKRmL6EGKP/view?usp=sharing"
             target="_blank"
           >
