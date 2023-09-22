@@ -28,7 +28,7 @@ export const Project = ({
         href={`${link}`}
       >
         <img
-          className="block hover:scale-110 transition-all duration-500 cursor-pointer w-[200px] h-[140px] md:h-[200px] lg:h-[180px] xl:h-[230px] 2xl:h-[270px]"
+          className="block hover:scale-110 transition-all duration-500 cursor-pointer w-[200px] md:w-[100%] h-[140px] md:h-[200px] lg:h-[180px] xl:h-[230px] 2xl:h-[270px]"
           src={srcImg}
           alt="Project"
         />
