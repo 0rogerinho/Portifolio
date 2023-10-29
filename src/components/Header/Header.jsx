@@ -1,18 +1,23 @@
-import React, { useState, useEffect, createContext } from 'react';
-import { CustomLink, MainMenu, nav } from './MainMenu';
+import React from 'react';
+//react scroll
 import { Element } from 'react-scroll';
+//layout
+import { BaseLayout } from '../../layout/BaseLayout';
+//components
+import { MainMenu, nav } from './MainMenu';
+import { CustomLink } from './CustomLink';
 
-export const UserContext = createContext();
+export const UserContext = React.createContext();
 
-const Header = () => {
-  const [openMenu, setOpenMenu] = useState(false);
-  const [scrollBackground, setScrollBackground] = useState(false);
+export const Header = () => {
+  const [openMenu, setOpenMenu] = React.useState(false);
+  const [scrollBackground, setScrollBackground] = React.useState(false);
 
   const handleScroll = () => {
     setScrollBackground(window.scrollY > 10);
   };
 
-  useEffect(() => {
+  React.useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
     return () => {
@@ -26,30 +31,32 @@ const Header = () => {
   }`;
 
   return (
-    <Element name="About">
-      <UserContext.Provider value={{ openMenu, setOpenMenu, scrollBackground }}>
-        <header
-          className={`z-50 transition-all fixed rounde duration-700 m-auto inset-x-0 py-[9px] px-[5%]  xl:px-[8%] ${headerClass}`}
+    <BaseLayout>
+      <Element name="About">
+        <UserContext.Provider
+          value={{ openMenu, setOpenMenu, scrollBackground }}
         >
-          <div className="w-full flex justify-between items-center py-[.5625rem]">
-            <h1 className="text-lg md:text-xl xl:text-3xl font-semibold">
-              Luan Silva
-            </h1>
-            <MainMenu />
-          </div>
-          <ul
-            className={`flex flex-col items-center gap-[1.5625rem] text-[.9375rem] font-semibold w-[5.875rem] p-[1.0625rem] right-10 duration-700 ${
-              openMenu ? 'block md:hidden' : 'hidden'
-            } ${scrollBackground ? 'opacity-100' : 'hidden'}`}
+          <header
+            className={`z-50 transition-all fixed rounde duration-700 m-auto inset-x-0 py-[9px] px-[5%]  xl:px-[8%] ${headerClass}`}
           >
-            {nav.map((title) => {
-              return <CustomLink key={title} title={title} target={title} />;
-            })}
-          </ul>
-        </header>
-      </UserContext.Provider>
-    </Element>
+            <div className="w-full flex justify-between items-center py-[9px]">
+              <h1 className="text-lg md:text-xl xl:text-3xl font-semibold">
+                Luan Silva
+              </h1>
+              <MainMenu />
+            </div>
+            <ul
+              className={`flex flex-col items-center gap-[25px] text-[.9375rem] font-semibold w-[94px] p-[17px] right-10 duration-700 ${
+                openMenu ? 'block md:hidden' : 'hidden'
+              } ${scrollBackground ? 'opacity-100' : 'hidden'}`}
+            >
+              {nav.map((title) => {
+                return <CustomLink key={title} title={title} target={title} />;
+              })}
+            </ul>
+          </header>
+        </UserContext.Provider>
+      </Element>
+    </BaseLayout>
   );
 };
-
-export default Header;

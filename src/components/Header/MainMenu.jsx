@@ -1,30 +1,13 @@
-import React, { useContext } from 'react';
-import { Link as ScrollLink } from 'react-scroll';
-
+import React from 'react';
+//components
+import { CustomLink } from './CustomLink';
 import { UserContext } from './Header';
 
 export const nav = ['About', 'Skills', 'Projects'];
 
-export const CustomLink = ({ title, target }) => {
-  return (
-    <li className="group">
-      <ScrollLink
-        to={target}
-        smooth={true}
-        duration={500}
-        className="cursor-pointer"
-        offset={-120}
-      >
-        {title}
-      </ScrollLink>
-      <span className="block m-auto w-1 h-1 rounded-lg bg-white group-hover:w-full transition-all duration-300"></span>
-    </li>
-  );
-};
-
 export const MainMenu = () => {
-  const { openMenu, setOpenMenu } = useContext(UserContext);
-  const { scrollBackground } = useContext(UserContext);
+  const { openMenu, setOpenMenu } = React.useContext(UserContext);
+  const { scrollBackground } = React.useContext(UserContext);
 
   const handleClickMenu = (event) => {
     event.preventDefault();
@@ -36,7 +19,7 @@ export const MainMenu = () => {
   return (
     <>
       <nav className="hidden md:block">
-        <ul className="flex gap-[3.125rem] text-[1.25rem] md:text-base lg:text-lg font-semibold cursor-pointer">
+        <ul className="flex gap-[50px] text-[1.25rem] md:text-base lg:text-lg font-semibold cursor-pointer">
           {nav.map((title) => {
             return <CustomLink key={title} title={title} target={title} />;
           })}

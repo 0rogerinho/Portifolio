@@ -1,6 +1,8 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap');
 
 *{
   margin: 0;
@@ -11,5 +13,8 @@
 body{
   color: white;
   background-color: #00010E;
+}
+p{
+  font-family: "Source Sans 3";
 }
 

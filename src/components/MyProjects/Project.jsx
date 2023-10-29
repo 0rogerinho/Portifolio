@@ -1,5 +1,6 @@
 import React from 'react';
-import { Tecnologic } from '../Skill/Tecnologic';
+//components
+import { Technologies } from '../Skill/Technologies';
 
 export const Project = ({
   title,
@@ -24,7 +25,7 @@ export const Project = ({
           </p>
           <div className="flex flex-wrap">
             {skill.map(({ id, skill, img }) => (
-              <Tecnologic key={id} srcImg={img} skill={skill} />
+              <Technologies key={id} srcImg={img} skill={skill} />
             ))}
           </div>
         </div>

@@ -1,11 +1,9 @@
-import Background from './Background';
-import MyProjects from './components/MyProjects/MyProjects';
+import Page from '../page/page';
 
 function App() {
   return (
     <>
-      <Background />
-      <MyProjects />
+      <Page />
     </>
   );
 }
