@@ -1,8 +1,9 @@
 import React, { useContext } from 'react';
 import { Link as ScrollLink } from 'react-scroll';
+
 import { UserContext } from './Header';
 
-export const nav = ['Home', 'About', 'Skills', 'Projects'];
+export const nav = ['About', 'Skills', 'Projects'];
 
 export const CustomLink = ({ title, target }) => {
   return (
@@ -12,6 +13,7 @@ export const CustomLink = ({ title, target }) => {
         smooth={true}
         duration={500}
         className="cursor-pointer"
+        offset={-120}
       >
         {title}
       </ScrollLink>

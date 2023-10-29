@@ -26,7 +26,7 @@ const Header = () => {
   }`;
 
   return (
-    <Element name="Home">
+    <Element name="About">
       <UserContext.Provider value={{ openMenu, setOpenMenu, scrollBackground }}>
         <header
           className={`z-50 transition-all fixed rounde duration-700 m-auto inset-x-0 py-[9px] px-[5%]  xl:px-[8%] ${headerClass}`}

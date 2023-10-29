@@ -1,4 +1,5 @@
 import React from 'react';
+import { Tecnologic } from '../Skill/Tecnologic';
 
 export const Project = ({
   title,
@@ -7,19 +8,28 @@ export const Project = ({
   itemsPosition,
   flexReverse,
   link,
+  skill,
 }) => {
   return (
     <div
-      className={`flex flex-col lg:flex-row gap-5 xl:gap-0 items-center mb-[1.875rem] lg:mb-28 xl:mb-48 ${flexReverse}`}
+      className={`flex flex-col lg:flex-row gap-5 xl:gap-0 items-center mb-[1.875rem] md:items-start lg:mb-28 xl:mb-48 ${flexReverse}`}
     >
       <div className="lg:w-[70%] flex flex-col gap-6">
-        <h1 className="text-lg md:text-3xl font-semibold">{title}</h1>
-        <p
-          className={`text-[.9375rem] md:text-xl xl:text-2xl text-${itemsPosition}`}
-        >
-          {text}
-        </p>
+        <h1 className="text-base md:text-3xl font-semibold">{title}</h1>
+        <div className="space-y-4">
+          <p
+            className={`max-w-[600px] 2xl:max-w-[800px] text-[#D4D4D4] text-xs md:text-lg xl:text-xl text-${itemsPosition}`}
+          >
+            {text}
+          </p>
+          <div className="flex flex-wrap">
+            {skill.map(({ id, skill, img }) => (
+              <Tecnologic key={id} srcImg={img} skill={skill} />
+            ))}
+          </div>
+        </div>
       </div>
+
       <a
         className={`my-14 lg:my-0 ${
           flexReverse == 'lg:flex-row-reverse' ? 'lg:mr-12' : 'lg:m-12'

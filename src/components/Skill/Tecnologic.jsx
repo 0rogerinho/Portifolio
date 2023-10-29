@@ -1,10 +1,13 @@
-export const Tecnologic = ({ srcImg }) => {
+export const Tecnologic = ({ skill, srcImg }) => {
   return (
-    <div className=" min-w-[100px] h-[80px] md:h-[100px] lg:h-[150px] md w-[15%] flex justify-center items-center border border-[#011540] rounded-lg  ">
+    <div className=" min-w-[100px]  my-2 md:mr-8 flex flex-col justify-center items-center">
       <img
-        className="block w-[40px] h-[40px] lg:w-[40px] lg:h-[40px] xl:w-[60px] xl:h-[60px] object-contain hover:scale-125 cursor-pointer transition-all duration-200"
+        className="block w-[30px] h-[30px] lg:w-[40px] lg:h-[40px] object-contain hover:scale-125 transition-all duration-200"
         src={srcImg}
       />
+      <p className="tracking-widest font-semibold text-[10px] md:text-xs">
+        {skill}
+      </p>
     </div>
   );
 };

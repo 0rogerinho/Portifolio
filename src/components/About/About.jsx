@@ -13,7 +13,7 @@ const About = () => {
     <Element name="About">
       <div className="flex justify-between gap-12 xl:gap-0 pt-12 md:pt-20 xl:pt-[165px] px-[5%] xl:px-[8%] 2xl:px-[20%]">
         <section className=" md:w-[550px] xl:w-[600px] mt-[1.1875rem] flex flex-col gap-[1.8125rem] md:gap-[2.625rem]">
-          <h1 className="md:text-2xl xl:text-3xl font-semibold font-Montserrat">
+          <h1 className=" md:text-3xl xl:text-4xl font-semibold font-Montserrat">
             <Typewriter
               options={{
                 strings: ['Desenvolvedor Full Stack', 'Web Design', 'UI/UX'],
@@ -23,8 +23,8 @@ const About = () => {
               }}
             />
           </h1>
-          <article>
-            <p className="text-sm md:text-xl tracking-wider font-Lato">
+          <article className="max-w-lg">
+            <p className="text-xs text-[#D4D4D4] md:text-xl tracking-wider font-Lato">
               Venho me dedicando todos os dias em programação. Desde o início,
               não houve um único dia em que não tenha continuado a aprender, com
               o objetivo de me tornar um desenvolvedor Full Stack excepcional.
@@ -32,7 +32,7 @@ const About = () => {
             </p>
           </article>
           <a
-            className="text-lg text-center md:text-lg lg:text-3xl font-semibold font-Montserrat w-[6.4375rem] md:w-[8.4375rem] lg:w-[15.125rem] py-[.3125rem] md:py-[.4375rem] md:px-[3.375rem] lg:px-[6.0625rem] rounded-[3.125rem] lg:py-[.625rem] bg-gradient-to-t from-[#3C1B46] to-[#9C3C5A] transition-all duration-300 hover:scale-110"
+            className="text-lg text-center md:text-lg lg:text-3xl font-semibold font-Montserrat w-[6.4375rem] md:w-[8.4375rem] lg:w-[15.125rem] py-[.3125rem] md:py-[.4375rem] md:px-[3.375rem] lg:px-[6.0625rem] rounded-[3.125rem] lg:py-[.625rem] bg-gradient-to-t from-[#3C1B46] to-[#9C3C5A] transition-all duration-300 hover:scale-110 xl:mt-4"
             href="https://drive.google.com/file/d/1PlRNp3wQR5uFKkgELkV6BQLKRmL6EGKP/view?usp=sharing"
             target="_blank"
           >
