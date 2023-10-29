@@ -15,11 +15,15 @@ ambição.
 - HTML
 - CSS
 - javaScript
+- Typescript
 - React
 - Tailwind
 - StoryBook
 - Node.js
-- Express 
+- Express
+- Material UI
+- NestJS
+- MongoDB
 
 ## Contato
 - E-mail: luansilvapmp@gmail.com
