@@ -98,7 +98,7 @@ export const MyProjects = () => {
             srcImg="/projects/todo.png"
             flexReverse="lg:flex-row"
             itemsPosition="end"
-            link="https://todorogerinho.vercel.app/"
+            link="https://todo-rogerinho.vercel.app"
             skill={todo}
           />
         </div>
