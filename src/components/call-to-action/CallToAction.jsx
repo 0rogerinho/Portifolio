@@ -12,7 +12,7 @@ export const CallToAction = () => {
           <h2 className="text-lg font-semibold md:text-3xl">Como Trabalho</h2>
           <iframe
             className="w-full h-[200px] rounded-lg m-auto min-[500px]:h-[400px] md:h-[400px] lg:h-[300px]"
-            src="https://www.youtube.com/embed/m87Gm5nHDrU?si=iJv8QE8u31yBufcM"
+            src="https://www.youtube.com/embed/m87Gm5nHDrU?si=1QPYfEh3DeKsueHk"
             title="YouTube video player"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen

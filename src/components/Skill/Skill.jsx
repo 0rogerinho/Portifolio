@@ -72,7 +72,7 @@ export const Skill = () => {
         <BaseLayout>
           <div className="gap-2 py-2 flex-center-col md:flex-center-row md:gap-4 md:py-4">
             <h1 className="text-lg font-semibold md:text-2xl lg:text-3xl">
-              habilidades
+              Habilidades
             </h1>
             <Marquee
               autoFill

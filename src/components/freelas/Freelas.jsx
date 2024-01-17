@@ -87,11 +87,11 @@ export const Freelances = () => {
     <BaseLayout className="pb-32">
       <div className="flex items-end justify-between">
         <h1 className="text-2xl font-semibold xl:text-6xl">Freelas</h1>
-        <button>
+        {/* <button>
           <p className="xl:text-2xl font-semibold after:block after:w-full after:rounded-full after:bg-gradient-to-r after:from-[#923858] after:to-[#57244B] after:animate-pulse after:h-0.5 md:after:h-1">
             Ver mais
           </p>
-        </button>
+        </button> */}
       </div>
       <div className="flex items-center justify-center">
         <Btn btnPrev />
@@ -104,7 +104,8 @@ export const Freelances = () => {
               navigation: false,
             },
             375: { slidesPerView: 1.7, spaceBetween: 10 },
-            550: { slidesPerView: 2.5, spaceBetween: 20 },
+            526: { slidesPerView: 2, spaceBetween: 20 },
+            600: { slidesPerView: 2.5, spaceBetween: 20 },
             868: { slidesPerView: 3, spaceBetween: 20 },
             1020: { slidesPerView: 3.5, spaceBetween: 20 },
           }}

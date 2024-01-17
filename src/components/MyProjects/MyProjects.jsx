@@ -70,8 +70,10 @@ export const MyProjects = () => {
   return (
     <BaseLayout>
       <Element name="Projetos">
-        <div className=" w-full mt-[70px] flex flex-col ">
-          <h1 className="mb-12 text-2xl font-semibold md:text-6xl">Projetos</h1>
+        <div className=" w-full mt-[70px] flex flex-col items-center lg:items-start ">
+          <h1 className="mb-8 text-3xl font-semibold text-center sm:mb-12 sm:text-start md:text-6xl">
+            Projetos
+          </h1>
 
           <Project
             title="Git Info Search"

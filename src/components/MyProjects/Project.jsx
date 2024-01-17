@@ -13,7 +13,7 @@ export const Project = ({
 }) => {
   return (
     <div
-      className={`flex flex-col lg:flex-row gap-5 xl:gap-0 items-center mb-[1.875rem] md:items-start lg:mb-28 xl:mb-32 ${flexReverse}`}
+      className={`text-center flex flex-col lg:flex-row gap-5 xl:gap-0 items-center mb-[1.875rem] lg:text-start md:items-start lg:mb-28 xl:mb-32 ${flexReverse}`}
     >
       <div className="lg:w-[70%] flex flex-col gap-6">
         <h1 className="text-base font-semibold md:text-3xl">{title}</h1>
@@ -23,7 +23,7 @@ export const Project = ({
           >
             {text}
           </p>
-          <div className="flex flex-wrap">
+          <div className="flex flex-wrap justify-center lg:justify-start">
             {skill.map(({ id, skill, img }) => (
               <Technologies key={id} srcImg={img} skill={skill} />
             ))}
@@ -32,7 +32,7 @@ export const Project = ({
       </div>
 
       <a
-        className={`my-14 lg:my-0 ${
+        className={`my-14 lg:my-0 mx-auto lg:mx-0 ${
           flexReverse == 'lg:flex-row-reverse' ? 'lg:mr-12' : 'lg:m-12'
         }`}
         target="_blank"

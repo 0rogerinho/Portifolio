@@ -73,7 +73,7 @@ export const About = () => {
               CV
             </a>
           </section>
-          <div className=" flex items-center justify-between">
+          <div className="flex items-center justify-between ">
             <img className="hidden xl:block" src="/avatar.png" alt="Luan" />
             <nav>
               <ul className="flex flex-col xl:mb-36 gap-5 md:gap-10 xl:gap-[4rem]">
