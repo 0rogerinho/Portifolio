@@ -69,9 +69,9 @@ const todo = [
 export const MyProjects = () => {
   return (
     <BaseLayout>
-      <Element name="Projects">
-        <div className=" w-full my-[70px] flex flex-col ">
-          <h1 className="text-2xl md:text-6xl font-semibold mb-12">Projects</h1>
+      <Element name="Projetos">
+        <div className=" w-full mt-[70px] flex flex-col ">
+          <h1 className="mb-12 text-2xl font-semibold md:text-6xl">Projetos</h1>
 
           <Project
             title="Git Info Search"

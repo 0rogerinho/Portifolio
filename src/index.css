@@ -17,4 +17,12 @@ body{
 p{
   font-family: "Source Sans 3";
 }
+.swiper-pagination-bullet{
+  background-image: linear-gradient(180deg, #923858 100%, #57244B 193.23%);
+}
+
+.swiper-pagination-fraction, .swiper-pagination-custom, .swiper-horizontal > .swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal {
+  position: absolute;
+  margin-top: 20px;
+}
 

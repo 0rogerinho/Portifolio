@@ -32,7 +32,7 @@ export const Header = () => {
 
   return (
     <BaseLayout>
-      <Element name="About">
+      <Element name="Sobre">
         <UserContext.Provider
           value={{ openMenu, setOpenMenu, scrollBackground }}
         >
@@ -40,7 +40,7 @@ export const Header = () => {
             className={`z-50 transition-all fixed rounde duration-700 m-auto inset-x-0 py-[9px] px-[5%]  xl:px-[8%] ${headerClass}`}
           >
             <div className="w-full flex justify-between items-center py-[9px]">
-              <h1 className="text-lg md:text-xl xl:text-3xl font-semibold">
+              <h1 className="text-lg font-semibold md:text-xl xl:text-3xl">
                 Luan Silva
               </h1>
               <MainMenu />

@@ -3,7 +3,7 @@ import React from 'react';
 import { CustomLink } from './CustomLink';
 import { UserContext } from './Header';
 
-export const nav = ['About', 'Skills', 'Projects'];
+export const nav = ['Sobre', 'Habilidades', 'Projetos'];
 
 export const MainMenu = () => {
   const { openMenu, setOpenMenu } = React.useContext(UserContext);

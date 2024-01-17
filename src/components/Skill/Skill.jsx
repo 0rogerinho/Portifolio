@@ -67,14 +67,13 @@ const dataSkills = [
 
 export const Skill = () => {
   return (
-    <Element name="Skills">
+    <Element name="Habilidades">
       <div className="w-full bg-gradient-to-t to-[#000A1D] from-[rgb(0,0,0,0.3)] mt-6 xl:mt-0 py-2 ">
         <BaseLayout>
-          <div className="flex-center-col md:flex-center-row gap-2 md:gap-4 py-2 md:py-4">
-            <h1 className=" text-lg font-semibold md:text-2xl lg:text-3xl">
-              Skills
+          <div className="gap-2 py-2 flex-center-col md:flex-center-row md:gap-4 md:py-4">
+            <h1 className="text-lg font-semibold md:text-2xl lg:text-3xl">
+              habilidades
             </h1>
-
             <Marquee
               autoFill
               speed={60}

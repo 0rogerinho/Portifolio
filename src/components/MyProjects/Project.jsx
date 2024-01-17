@@ -13,10 +13,10 @@ export const Project = ({
 }) => {
   return (
     <div
-      className={`flex flex-col lg:flex-row gap-5 xl:gap-0 items-center mb-[1.875rem] md:items-start lg:mb-28 xl:mb-48 ${flexReverse}`}
+      className={`flex flex-col lg:flex-row gap-5 xl:gap-0 items-center mb-[1.875rem] md:items-start lg:mb-28 xl:mb-32 ${flexReverse}`}
     >
       <div className="lg:w-[70%] flex flex-col gap-6">
-        <h1 className="text-base md:text-3xl font-semibold">{title}</h1>
+        <h1 className="text-base font-semibold md:text-3xl">{title}</h1>
         <div className="space-y-4">
           <p
             className={`max-w-[600px] 2xl:max-w-[800px] text-[#D4D4D4] text-xs md:text-lg xl:text-xl text-${itemsPosition}`}
