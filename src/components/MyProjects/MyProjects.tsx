@@ -2,65 +2,66 @@
 import { Element } from 'react-scroll';
 //components
 import { Project } from './Project';
-import { BaseLayout } from '../../layout/BaseLayout';
+// Layouts
+import { BaseLayout } from '../../layout';
 
 const githubInfoSearch = [
   {
-    id: '2',
+    id: 2,
     skill: 'React',
     img: '/skills/react.svg',
   },
   {
-    id: '1',
+    id: 1,
     skill: 'javaScript',
     img: '/skills/js.svg',
   },
   {
-    id: '3',
+    id: 3,
     skill: 'Tailwind',
     img: '/skills/tailwind.svg',
   },
 ];
 const ecommerce = [
   {
-    id: '6',
+    id: 6,
     skill: 'javaScript',
     img: '/skills/js.svg',
   },
   {
-    id: '8',
+    id: 8,
     skill: 'HTML',
     img: '/skills/html.svg',
   },
   {
-    id: '9',
+    id: 9,
     skill: 'CSS',
     img: '/skills/css.svg',
   },
 ];
 const todo = [
   {
-    id: '1',
+    id: 1,
     skill: 'MongoDB',
     img: '/skills/mongoDB.svg',
   },
   {
-    id: '3',
+    id: 3,
     skill: 'React',
     img: '/skills/react.svg',
   },
   {
-    id: '6',
+    id: 6,
     skill: 'javaScript',
     img: '/skills/js.svg',
   },
   {
-    id: '7',
+    id: 7,
     skill: 'express',
     img: '/skills/expressJS.svg',
   },
   {
-    id: '9',
+    id: 9,
     skill: 'Tailwind',
     img: '/skills/tailwind.svg',
   },
@@ -88,7 +89,7 @@ export const MyProjects = () => {
             text="A Mined Just Store é um e-commerce voltado para a moda feminina, foi meticulosamente projetada para proporcionar uma experiência de compra única e envolvente.
 "
             srcImg="/projects/ecommerce.png"
-            flexReverse="lg:flex-row-reverse"
+            flexReverse="lg:flex-row-reverse "
             itemsPosition="end"
             link="https://mined-development-company.github.io/E-commerce-FRONT/"
             skill={ecommerce}

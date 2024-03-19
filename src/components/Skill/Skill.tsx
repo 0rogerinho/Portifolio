@@ -1,11 +1,11 @@
-import React from 'react';
 //react fast marquee
 import Marquee from 'react-fast-marquee';
 //react scroll
 import { Element } from 'react-scroll';
 //components
 import { Technologies } from './Technologies';
-import { BaseLayout } from '../../layout/BaseLayout';
+// Layouts
+import { BaseLayout } from '../../layout';
 
 const dataSkills = [
   {

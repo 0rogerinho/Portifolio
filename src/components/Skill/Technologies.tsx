@@ -1,6 +1,14 @@
+// Libs
 import { cn } from '../../lib/utils';
+// Types
+import { ITechnologies } from './@types';
 
-export const Technologies = ({ skill, srcImg, classDiv, classImg }) => {
+export const Technologies = ({
+  skill,
+  srcImg,
+  classDiv,
+  classImg,
+}: ITechnologies) => {
   return (
     <div
       className={cn(
@@ -14,6 +22,7 @@ export const Technologies = ({ skill, srcImg, classDiv, classImg }) => {
           classImg,
         )}
         src={srcImg}
+        alt=""
       />
       <p className=" tracking-widest font-semibold text-[.625rem] md:text-xs">
         {skill}

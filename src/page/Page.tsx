@@ -1,4 +1,3 @@
-import React from 'react';
 //components
 import { About, CallToAction, Header, MyProjects, Skill } from '../components';
 import { Freelances } from '../components/freelas/Freelas';

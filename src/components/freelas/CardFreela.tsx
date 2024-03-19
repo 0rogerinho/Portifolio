@@ -1,8 +1,11 @@
-import React from 'react';
+// Skill
 import { Technologies } from '../Skill/Technologies';
+// Marque
 import Marquee from 'react-fast-marquee';
+// Types
+import { ICard, ICardFreelas } from './@types';
 
-const Card = ({ title, content }) => {
+const Card = ({ title, content }: ICard) => {
   return (
     <div className="flex flex-col min-[400px]:flex-row items-center gap-1 mt-3">
       <h3 className="text-base font-semibold">{title}</h3>
@@ -11,7 +14,7 @@ const Card = ({ title, content }) => {
   );
 };
 
-const CardFreelas = ({ img, name, service, language, link }) => {
+const CardFreelas = ({ img, name, service, language, link }: ICardFreelas) => {
   return (
     <div className=" bg-[url('/background/desktop.png')] border border-[rgba(255,_255,_255,_0.5)] rounded-2xl p-3">
       <a href={link} target="_blank">

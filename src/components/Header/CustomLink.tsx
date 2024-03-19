@@ -1,6 +1,8 @@
+// React-Scroll
 import { Link } from 'react-scroll';
-
-export const CustomLink = ({ title, target }) => {
+// Types
+import { ICustomLink } from './@types';
+export const CustomLink = ({ title, target }: ICustomLink) => {
   return (
     <li className="group">
       <Link

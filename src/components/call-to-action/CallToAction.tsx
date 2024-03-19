@@ -1,6 +1,6 @@
-import React from 'react';
 // Layout
 import { BaseLayout } from '../../layout';
+// form
 import { Input } from '../form/Input';
 import { TextArea } from '../form/TextArea';
 

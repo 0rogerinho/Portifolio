@@ -1,4 +1,3 @@
-import React from 'react';
 //typewriter-effect
 import Typewriter from 'typewriter-effect';
 //react scroll
@@ -11,8 +10,9 @@ import {
   AiOutlineLinkedin,
 } from 'react-icons/ai';
 //components
-import { BaseLayout } from '../../layout/BaseLayout';
+
 import { SocialNetwork } from './SocialNetwork';
+import { BaseLayout } from '../../layout';
 
 const dataSocialNetwork = [
   {

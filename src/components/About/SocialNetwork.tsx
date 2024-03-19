@@ -1,6 +1,6 @@
-import React from 'react';
+import { ISocialNetwork } from './@types';
 
-export const SocialNetwork = ({ link, logo }) => {
+export const SocialNetwork = ({ link, logo }: ISocialNetwork) => {
   return (
     <li>
       <a href={link} target="_blank">
