@@ -19,7 +19,7 @@ const CardFreelas = ({ img, name, service, language, link }: ICardFreelas) => {
     <div className=" bg-[url('/background/desktop.png')] border border-[rgba(255,_255,_255,_0.5)] rounded-2xl p-3">
       <a href={link} target="_blank">
         <img
-          className="block hover:scale-105 mb-3 rounded-xl transition-all duration-500 cursor-pointer  w-full h-[140px] md:h-[200px] lg:h-[180px] xl:h-[210px] 2xl:h-[250px] object-cover object-top"
+          className="block hover:scale-105 mb-3 rounded-xl transition-all duration-500 cursor-pointer  w-full h-[140px] md:h-[200px] lg:h-[180px] xl:h-[220px] 2xl:h-[250px] object-cover object-top"
           src={img}
           alt="Project"
         />

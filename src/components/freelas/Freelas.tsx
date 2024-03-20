@@ -1,17 +1,14 @@
-import React from 'react';
+// Layout
 import { BaseLayout } from '../../layout';
-import { BsChevronLeft } from 'react-icons/bs';
-import { cn } from '../../lib/utils';
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from '../ui/carousel';
 
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/pagination';
-
-// import required modules
-import { Navigation, Pagination } from 'swiper/modules';
+//
 import CardFreelas from './CardFreela';
 
 const data = [
@@ -69,71 +66,36 @@ const data = [
   },
 ];
 
-const Btn = ({ btnPrev = false }) => {
-  return (
-    <BsChevronLeft
-      className={cn(
-        'cursor-pointer absolute text-2xl lg:text-4xl 2xl:text-6xl hidden md:block',
-        btnPrev
-          ? 'swiper-btn-prev left-0 xl:left-12 md:left-2 lg:left-2 2xl:left-[16%]'
-          : 'swiper-btn-next rotate-180 right-0 md:right-2 lg:right-2 xl:right-12 2xl:right-[16%]',
-      )}
-    />
-  );
-};
-
 export const Freelances = () => {
   return (
-    <BaseLayout className="pb-32">
-      <div className="flex items-end justify-between">
-        <h1 className="text-2xl font-semibold xl:text-6xl">Freelas</h1>
-        {/* <button>
-          <p className="xl:text-2xl font-semibold after:block after:w-full after:rounded-full after:bg-gradient-to-r after:from-[#923858] after:to-[#57244B] after:animate-pulse after:h-0.5 md:after:h-1">
-            Ver mais
-          </p>
-        </button> */}
-      </div>
-      <div className="flex items-center justify-center">
-        <Btn btnPrev />
-        <Swiper
-          breakpoints={{
-            0: {
-              pagination: { clickable: true },
-              slidesPerView: 1.5,
-              spaceBetween: 10,
-              navigation: false,
-            },
-            375: { slidesPerView: 1.7, spaceBetween: 10 },
-            526: { slidesPerView: 2, spaceBetween: 20 },
-            600: { slidesPerView: 2.5, spaceBetween: 20 },
-            868: { slidesPerView: 3, spaceBetween: 20 },
-            1020: { slidesPerView: 3.5, spaceBetween: 20 },
-          }}
-          pagination={{ clickable: true }}
-          navigation={{
-            enabled: true,
-            prevEl: '.swiper-btn-prev',
-            nextEl: '.swiper-btn-next',
-          }}
-          modules={[Navigation, Pagination]}
-          className="mySwiper"
-        >
-          {data.map(({ id, img, service, name, language, link }) => {
-            return (
-              <SwiperSlide className="py-2" key={id}>
-                <CardFreelas
-                  link={link}
-                  img={img}
-                  name={name}
-                  service={service}
-                  language={language}
-                />
-              </SwiperSlide>
-            );
-          })}
-        </Swiper>
-        <Btn />
-      </div>
+    <BaseLayout className="w-full pb-32 space-y-2 xl:space-y-6">
+      <h1 className="text-2xl font-semibold xl:text-6xl">Freelas</h1>
+
+      <Carousel
+        opts={{
+          align: 'start',
+        }}
+        className="w-full "
+      >
+        <CarouselContent className="gap-2">
+          {data.map(({ id, img, service, name, language, link }) => (
+            <CarouselItem
+              key={id}
+              className="basis-[100%] min-[320px]:basis-[65%] sm:basis-[42%] lg:basis-[28%]"
+            >
+              <CardFreelas
+                link={link}
+                img={img}
+                name={name}
+                service={service}
+                language={language}
+              />
+            </CarouselItem>
+          ))}
+        </CarouselContent>
+        <CarouselPrevious className="hidden lg:block items-end" />
+        <CarouselNext className="hidden lg:block" />
+      </Carousel>
     </BaseLayout>
   );
 };
