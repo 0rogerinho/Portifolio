@@ -27,6 +27,19 @@ const data = [
   },
   {
     id: 2,
+    img: '/freelas/captainWindow.png',
+    name: 'Captain Window',
+    service: 'Front-end, design',
+    language: [
+      { skill: 'Next', img: '/skills/next.svg' },
+      { skill: 'Tailwind', img: '/skills/tailwind.svg' },
+      { skill: 'Typescript', img: '/skills/ts.svg' },
+      { skill: 'HTML', img: '/skills/html.svg' },
+    ],
+    link: 'https://distribuidora-aguiar-kappa.vercel.app/',
+  },
+  {
+    id: 3,
     img: '/freelas/proben.png',
     name: 'Proben',
     service: 'Front-end, design',
@@ -39,7 +52,7 @@ const data = [
     link: 'https://proben-one.vercel.app/',
   },
   {
-    id: 3,
+    id: 4,
     img: '/freelas/infinity.png',
     name: 'Inifnity',
     service: 'Front-end',
@@ -52,7 +65,7 @@ const data = [
     link: 'https://infinity-ruby-one.vercel.app/',
   },
   {
-    id: 4,
+    id: 5,
     img: '/freelas/futHoje.png',
     name: 'FutHoje',
     service: 'Front-end',
