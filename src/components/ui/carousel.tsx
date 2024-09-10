@@ -203,7 +203,7 @@ const CarouselPrevious = React.forwardRef<
       ref={ref}
       size={size}
       className={cn(
-        'absolute  h-8 w-8 rounded-full bg-transparent hover:bg-transparent',
+        'absolute h-8 w-8 rounded-full bg-transparent hover:bg-transparent',
         orientation === 'horizontal'
           ? '-left-12 top-1/2 -translate-y-1/2'
           : '-top-12 left-1/2 -translate-x-1/2 rotate-90',
@@ -213,7 +213,7 @@ const CarouselPrevious = React.forwardRef<
       onClick={scrollPrev}
       {...props}
     >
-      <IoIosArrowBack className="h-8 w-8" />
+      <IoIosArrowBack className="h-6 w-6 lg:h-8 lg:w-8 mr-1" />
       <span className="sr-only">Previous slide</span>
     </Button>
   );
@@ -241,7 +241,7 @@ const CarouselNext = React.forwardRef<
       onClick={scrollNext}
       {...props}
     >
-      <IoIosArrowBack className="h-8 w-8 rotate-180" />
+      <IoIosArrowBack className="h-6 w-6 lg:h-8 lg:w-8 rotate-180 ml-1" />
       <span className="sr-only">Next slide</span>
     </Button>
   );

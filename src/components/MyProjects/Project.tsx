@@ -11,6 +11,7 @@ export const Project = ({
   itemsPosition,
   flexReverse,
   link,
+  time,
   skill,
 }: IProject) => {
   return (
@@ -21,7 +22,10 @@ export const Project = ({
       )}
     >
       <div className="w-full flex flex-col gap-6 lg:w-fit">
-        <h1 className="text-base font-semibold md:text-3xl">{title}</h1>
+        <div className="flex flex-col items-center gap-2 lg:flex-row">
+          <h1 className="text-xl font-semibold md:text-3xl">{title}</h1>
+          {time && <p className="text-xs opacity-50 lg:text-sm">{time}</p>}
+        </div>
         <div className="space-y-4">
           <p
             className={`w-fit m-auto max-w-[600px] 2xl:max-w-[800px] text-[#D4D4D4] text-xs md:text-lg lg:m-0 xl:text-xl text-${itemsPosition}`}

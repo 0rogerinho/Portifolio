@@ -13,7 +13,20 @@ import CardFreelas from './CardFreela';
 
 const data = [
   {
-    id: 1,
+    id: 6,
+    img: '/freelas/kafraverse.png',
+    name: 'Kafraverse',
+    service: 'Front-end, back-end, design',
+    language: [
+      { skill: 'Next', img: '/skills/next.svg' },
+      { skill: 'Tailwind', img: '/skills/tailwind.svg' },
+      { skill: 'Typescript', img: '/skills/ts.svg' },
+      { skill: 'HTML', img: '/skills/html.svg' },
+    ],
+    link: 'https://www.kafraverse.com/',
+  },
+  {
+    id: 5,
     img: '/freelas/aguiar.png',
     name: 'Distribuidora Aguiar',
     service: 'Front-end, design',
@@ -26,7 +39,7 @@ const data = [
     link: 'https://distribuidora-aguiar-kappa.vercel.app/',
   },
   {
-    id: 2,
+    id: 4,
     img: '/freelas/captainWindow.png',
     name: 'Captain Window',
     service: 'Front-end, design',
@@ -36,7 +49,7 @@ const data = [
       { skill: 'Typescript', img: '/skills/ts.svg' },
       { skill: 'HTML', img: '/skills/html.svg' },
     ],
-    link: 'https://distribuidora-aguiar-kappa.vercel.app/',
+    link: 'https://www.captain-window.com/',
   },
   {
     id: 3,
@@ -52,7 +65,7 @@ const data = [
     link: 'https://proben-one.vercel.app/',
   },
   {
-    id: 4,
+    id: 2,
     img: '/freelas/infinity.png',
     name: 'Inifnity',
     service: 'Front-end',
@@ -65,7 +78,7 @@ const data = [
     link: 'https://infinity-ruby-one.vercel.app/',
   },
   {
-    id: 5,
+    id: 1,
     img: '/freelas/futHoje.png',
     name: 'FutHoje',
     service: 'Front-end',
@@ -88,13 +101,13 @@ export const Freelances = () => {
         opts={{
           align: 'start',
         }}
-        className="w-full "
+        className="w-full"
       >
         <CarouselContent className="gap-2">
           {data.map(({ id, img, service, name, language, link }) => (
             <CarouselItem
               key={id}
-              className="basis-[100%] min-[320px]:basis-[65%] sm:basis-[42%] lg:basis-[28%]"
+              className="basis-[100%] min-[375px]:basis-[70%] sm:basis-[42%] lg:basis-[28%]"
             >
               <CardFreelas
                 link={link}
@@ -106,8 +119,8 @@ export const Freelances = () => {
             </CarouselItem>
           ))}
         </CarouselContent>
-        <CarouselPrevious className="hidden lg:block items-end" />
-        <CarouselNext className="hidden lg:block" />
+        <CarouselPrevious className="max-lg:left-0 max-lg:bg-[rgba(1,06,23,0.9)]" />
+        <CarouselNext className="max-lg:right-0 max-lg:bg-[rgba(1,06,23,0.9)]" />
       </Carousel>
     </BaseLayout>
   );

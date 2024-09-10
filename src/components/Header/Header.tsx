@@ -51,7 +51,7 @@ export const Header = () => {
             </div>
             <ul
               className={cn(
-                'flex-col items-center gap-[25px] text-[.9375rem] font-semibold w-[94px] p-[17px] right-10 duration-700 hidden',
+                'w-full flex-col justify-center items-center gap-[25px] text-[.9375rem] font-semibold p-[17px] right-10 duration-700 hidden',
                 openMenu && 'flex md:hidden',
                 scrollBackground ? 'opacity-100' : 'hidden',
               )}

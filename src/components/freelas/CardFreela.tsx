@@ -7,9 +7,9 @@ import { ICard, ICardFreelas } from './@types';
 
 const Card = ({ title, content }: ICard) => {
   return (
-    <div className="flex flex-col min-[400px]:flex-row items-center gap-1 mt-3">
+    <div className="flex flex-row items-center gap-1 mt-3">
       <h3 className="text-base font-semibold">{title}</h3>
-      <p className="text-sm opacity-80">{content}</p>
+      <p className="text-sm opacity-80 line-clamp-1">{content}</p>
     </div>
   );
 };
@@ -27,7 +27,7 @@ const CardFreelas = ({ img, name, service, language, link }: ICardFreelas) => {
       <Card title="Nome:" content={name} />
       <Card title="Serviço:" content={service} />
       <div className="flex flex-col items-center gap-2 mt-2 min-[400px]:flex-row">
-        <h3 className="font-semibold">Linguagem:</h3>{' '}
+        <h3 className="hidden lg:block font-semibold">Linguagem:</h3>{' '}
         <Marquee
           autoFill
           speed={30}

@@ -7,7 +7,7 @@ import { TextArea } from '../form/TextArea';
 export const CallToAction = () => {
   return (
     <div className="w-full h-1/2 xg:h-[956px] bg-[url(/background/desktop.png)] bg-center bg-cover">
-      <BaseLayout className="justify-between gap-10 py-8 space-y-5 lg:flex mb-36">
+      <BaseLayout className="justify-between gap-10 py-8 space-y-5 lg:flex">
         <div className="space-y-1 lg:mt-[26px] lg:w-[1000px]">
           <h2 className="text-lg font-semibold md:text-3xl">Como Trabalho</h2>
           <iframe

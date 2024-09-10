@@ -5,66 +5,89 @@ import { Project } from './Project';
 // Layouts
 import { BaseLayout } from '../../layout';
 
-const githubInfoSearch = [
+const data = [
   {
-    id: 2,
-    skill: 'React',
-    img: '/skills/react.svg',
+    title: 'Mined Just Store',
+    text: 'A Mined Just Store é um e-commerce voltado para a moda feminina, foi meticulosamente projetada para proporcionar uma experiência de compra única e envolvente.',
+    srcImg: '/projects/ecommerce.png',
+    link: 'https://mined-development-company.github.io/E-commerce-FRONT/',
+    time: '05/02/2023, 3 meses de estudo',
+    skill: [
+      {
+        id: 6,
+        skill: 'javaScript',
+        img: '/skills/js.svg',
+      },
+      {
+        id: 8,
+        skill: 'HTML',
+        img: '/skills/html.svg',
+      },
+      {
+        id: 9,
+        skill: 'CSS',
+        img: '/skills/css.svg',
+      },
+    ],
   },
   {
-    id: 1,
-    skill: 'javaScript',
-    img: '/skills/js.svg',
+    title: 'Git Info Search',
+    text: 'É um site que simplifica a busca e visualização de informações de usuários no GitHub, fácil de usar, onde os usuários podem simplesmente digitar o nome de usuário do GitHub que desejam pesquisar. Em segundos, o GitInfoSearch varre a vasta base de dados do GitHub e fornece uma visão detalhada das informações públicas disponíveis sobre o perfil do usuário pesquisado.',
+    srcImg: '/projects/searchGithub.png',
+    link: 'https://github-user-search-app-phi-five.vercel.app/',
+    time: '12/04/2023, 6 meses de estudo',
+    skill: [
+      {
+        id: 2,
+        skill: 'React',
+        img: '/skills/react.svg',
+      },
+      {
+        id: 1,
+        skill: 'javaScript',
+        img: '/skills/js.svg',
+      },
+      {
+        id: 3,
+        skill: 'Tailwind',
+        img: '/skills/tailwind.svg',
+      },
+    ],
   },
-  {
-    id: 3,
-    skill: 'Tailwind',
-    img: '/skills/tailwind.svg',
-  },
-];
-const ecommerce = [
-  {
-    id: 6,
-    skill: 'javaScript',
-    img: '/skills/js.svg',
-  },
-  {
-    id: 8,
-    skill: 'HTML',
-    img: '/skills/html.svg',
-  },
-  {
-    id: 9,
-    skill: 'CSS',
-    img: '/skills/css.svg',
-  },
-];
-const todo = [
-  {
-    id: 1,
-    skill: 'MongoDB',
-    img: '/skills/mongoDB.svg',
-  },
-  {
-    id: 3,
-    skill: 'React',
-    img: '/skills/react.svg',
-  },
-  {
-    id: 6,
-    skill: 'javaScript',
-    img: '/skills/js.svg',
-  },
-  {
-    id: 7,
-    skill: 'express',
-    img: '/skills/expressJS.svg',
-  },
-  {
-    id: 9,
-    skill: 'Tailwind',
-    img: '/skills/tailwind.svg',
-  },
+  // {
+  //   title: 'TODO list',
+  //   content:
+  //     'Desenvolvido com o propósito de simplificar a organização de tarefas, o Todu List apresenta um design atraente que oferece uma experiência de usuário excepcional.',
+  //   img: '/projects/todo.png',
+  //   link: 'https://todo-rogerinho.vercel.app',
+  //   skills: [
+  //     {
+  //       id: 1,
+  //       skill: 'MongoDB',
+  //       img: '/skills/mongoDB.svg',
+  //     },
+  //     {
+  //       id: 3,
+  //       skill: 'React',
+  //       img: '/skills/react.svg',
+  //     },
+  //     {
+  //       id: 6,
+  //       skill: 'javaScript',
+  //       img: '/skills/js.svg',
+  //     },
+  //     {
+  //       id: 7,
+  //       skill: 'express',
+  //       img: '/skills/expressJS.svg',
+  //     },
+  //     {
+  //       id: 9,
+  //       skill: 'Tailwind',
+  //       img: '/skills/tailwind.svg',
+  //     },
+  //   ],
+  // },
 ];
 
 export const MyProjects = () => {
@@ -76,34 +99,15 @@ export const MyProjects = () => {
             Projetos
           </h1>
 
-          <Project
-            title="Git Info Search"
-            text="É um site que simplifica a busca e visualização de informações de usuários no GitHub, fácil de usar, onde os usuários podem simplesmente digitar o nome de usuário do GitHub que desejam pesquisar. Em segundos, o GitInfoSearch varre a vasta base de dados do GitHub e fornece uma visão detalhada das informações públicas disponíveis sobre o perfil do usuário pesquisado.
-"
-            srcImg="/projects/searchGithub.png"
-            link="https://github-user-search-app-phi-five.vercel.app/"
-            skill={githubInfoSearch}
-          />
-          <Project
-            title="Mined Just Store"
-            text="A Mined Just Store é um e-commerce voltado para a moda feminina, foi meticulosamente projetada para proporcionar uma experiência de compra única e envolvente.
-"
-            srcImg="/projects/ecommerce.png"
-            flexReverse="lg:flex-row-reverse "
-            itemsPosition="end"
-            link="https://mined-development-company.github.io/E-commerce-FRONT/"
-            skill={ecommerce}
-          />
-          <Project
-            title="TODO list"
-            text="Desenvolvido com o propósito de simplificar a organização de tarefas, o Todu List apresenta um design atraente que oferece uma experiência de usuário excepcional.
-"
-            srcImg="/projects/todo.png"
-            flexReverse="lg:flex-row"
-            itemsPosition="end"
-            link="https://todo-rogerinho.vercel.app"
-            skill={todo}
-          />
+          {data.map((item, index) => (
+            <Project
+              key={index}
+              flexReverse={
+                index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'
+              }
+              {...item}
+            />
+          ))}
         </div>
       </Element>
     </BaseLayout>
