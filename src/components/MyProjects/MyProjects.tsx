@@ -54,40 +54,30 @@ const data = [
       },
     ],
   },
-  // {
-  //   title: 'TODO list',
-  //   content:
-  //     'Desenvolvido com o propósito de simplificar a organização de tarefas, o Todu List apresenta um design atraente que oferece uma experiência de usuário excepcional.',
-  //   img: '/projects/todo.png',
-  //   link: 'https://todo-rogerinho.vercel.app',
-  //   skills: [
-  //     {
-  //       id: 1,
-  //       skill: 'MongoDB',
-  //       img: '/skills/mongoDB.svg',
-  //     },
-  //     {
-  //       id: 3,
-  //       skill: 'React',
-  //       img: '/skills/react.svg',
-  //     },
-  //     {
-  //       id: 6,
-  //       skill: 'javaScript',
-  //       img: '/skills/js.svg',
-  //     },
-  //     {
-  //       id: 7,
-  //       skill: 'express',
-  //       img: '/skills/expressJS.svg',
-  //     },
-  //     {
-  //       id: 9,
-  //       skill: 'Tailwind',
-  //       img: '/skills/tailwind.svg',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'Kanban',
+    text: 'Desenvolvimento de um Kanban simples sem o uso de funcionalidades nativas de "drag-and-drop" do HTML ou de bibliotecas externas, com o objetivo de aprofundar o entendimento sobre o funcionamento de um sistema Kanban',
+    srcImg: '/projects/kanban.png',
+    time: '08/11/2024, 2 anos de estudos',
+    link: 'https://rogerinho-kanban.vercel.app/',
+    skill: [
+      {
+        id: 1,
+        skill: 'React',
+        img: '/skills/react.svg',
+      },
+      {
+        id: 2,
+        skill: 'TypeScript',
+        img: '/skills/ts.svg',
+      },
+      {
+        id: 2,
+        skill: 'Tailwind',
+        img: '/skills/tailwind.svg',
+      },
+    ],
+  },
 ];
 
 export const MyProjects = () => {
