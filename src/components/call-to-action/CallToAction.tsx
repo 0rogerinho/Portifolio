@@ -49,7 +49,7 @@ export const CallToAction = () => {
         </div>
         <form
           className="w-full space-y-2"
-          action="https://formsubmit.co/luansilvapmp@gmail.com"
+          action="https://formsubmit.co/rogerinhoportfolio@gmail.com"
           method="POST"
         >
           <h1 className="text-lg font-semibold md:text-3xl">
