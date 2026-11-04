@@ -49,21 +49,31 @@ export const CallToAction = () => {
         </div>
         <form
           className="w-full space-y-2"
-          action="https://formsubmit.co/rogerinhoportfolio@gmail.com"
+          action="https://formsubmit.io/f/dd53e35d-d20a-44a0-bdb8-678096c55768"
           method="POST"
         >
           <h1 className="text-lg font-semibold md:text-3xl">
             Entre em contato
           </h1>
           <div className="p-4 bg-gradient-to-tl from-[#000514D4] to-[#010617] rounded-[10px] space-y-4 md:p-9">
-            <Input required label="Nome" type="text" name="name" />
-            <Input required label="Email" type="email" name="email" />
+            <Input required label="Nome" type="text" name="Nome" />
+            <Input required label="Email" type="email" name="Email" />
+            <Input label="Telefone" type="tel" name="Phone" required={false} />
             <TextArea
               required
-              name="description"
-              label="Descrição (opcional)"
+              name="Descrição"
+              label="Descrição"
               type="text"
               className="h-40 md:h-64"
+            />
+
+            {/* Honeypot: bots fill it in, people never see it. Leave it empty. */}
+            <input
+              type="text"
+              name="_formsubmit_id"
+              tabIndex={-1}
+              autoComplete="off"
+              hidden
             />
 
             <button
