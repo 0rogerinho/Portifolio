@@ -23,7 +23,7 @@ const data = [
       { skill: 'Typescript', img: '/skills/ts.svg' },
       { skill: 'HTML', img: '/skills/html.svg' },
     ],
-    link: 'https://www.kafraverse.com/',
+    link: 'https://kafra-git-feat-mock-0rogerinhos-projects.vercel.app/',
   },
   {
     id: 5,
