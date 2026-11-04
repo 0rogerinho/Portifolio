@@ -1,6 +1,7 @@
 //components
 import { About, CallToAction, Header, MyProjects, Skill } from '../components';
 import { Freelances } from '../components/freelas/Freelas';
+import { Softwares } from '../components/Softwares/Softwares';
 
 const Page = () => {
   return (
@@ -11,6 +12,7 @@ const Page = () => {
         <Skill />
       </div>
       <MyProjects />
+      <Softwares />
       <Freelances />
       <CallToAction />
     </>

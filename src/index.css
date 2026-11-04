@@ -17,6 +17,56 @@ body{
 p{
   font-family: "Source Sans 3";
 }
+
+/* Scrollbar — Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #923858 #0a0d1a;
+}
+
+/* Scrollbar — Chrome, Edge, Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #0a0d1a;
+  border-radius: 999px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #923858 0%, #57244B 100%);
+  border-radius: 999px;
+  border: 2px solid #0a0d1a;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #b3456c 0%, #6e2d5c 100%);
+}
+
+*::-webkit-scrollbar-corner {
+  background: #0a0d1a;
+}
+
+/* Scrollbar do modal — mais fino e contido */
+.modal-scroll {
+  scrollbar-gutter: stable;
+}
+
+.modal-scroll::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-scroll::-webkit-scrollbar-track {
+  background: transparent;
+  margin-block: 12px;
+}
+
+.modal-scroll::-webkit-scrollbar-thumb {
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
 .swiper-pagination-bullet{
   background-image: linear-gradient(180deg, #923858 100%, #57244B 193.23%);
 }

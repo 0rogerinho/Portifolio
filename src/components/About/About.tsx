@@ -59,10 +59,10 @@ export const About = () => {
             </h1>
 
             <p className="max-w-[400px] md:max-w-[600px] text-xs text-[#D4D4D4] md:text-xl tracking-wide">
-              Venho me dedicando todos os dias em programação. Desde o início,
-              não houve um único dia em que não tenha continuado a aprender, com
-              o objetivo de me tornar um desenvolvedor Full Stack excepcional.
-              Meu foco é resolver problemas do mercado
+              Sou desenvolvedor Full Stack com ampla experiência criando sites,
+              softwares e apps. Atuo do front-end ao back-end, entregando
+              soluções completas, com foco em qualidade, desempenho e uma boa
+              experiência para o usuário.
             </p>
 
             <a

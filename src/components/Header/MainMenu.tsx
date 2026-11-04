@@ -4,7 +4,7 @@ import { CustomLink } from './CustomLink';
 import { IMainMenu } from './@types';
 import { cn } from '../../lib/utils';
 
-export const nav = ['Sobre', 'Habilidades', 'Projetos'];
+export const nav = ['Sobre', 'Habilidades', 'Projetos', 'Softwares'];
 
 export const MainMenu = ({
   openMenu,

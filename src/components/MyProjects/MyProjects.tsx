@@ -6,30 +6,30 @@ import { Project } from './Project';
 import { BaseLayout } from '../../layout';
 
 const data = [
-  {
-    title: 'Mined Just Store',
-    text: 'A Mined Just Store é um e-commerce voltado para a moda feminina, foi meticulosamente projetada para proporcionar uma experiência de compra única e envolvente.',
-    srcImg: '/projects/ecommerce.png',
-    link: 'https://mined-development-company.github.io/E-commerce-FRONT/',
-    time: '05/02/2023, 3 meses de estudo',
-    skill: [
-      {
-        id: 6,
-        skill: 'javaScript',
-        img: '/skills/js.svg',
-      },
-      {
-        id: 8,
-        skill: 'HTML',
-        img: '/skills/html.svg',
-      },
-      {
-        id: 9,
-        skill: 'CSS',
-        img: '/skills/css.svg',
-      },
-    ],
-  },
+  // {
+  //   title: 'Mined Just Store',
+  //   text: 'A Mined Just Store é um e-commerce voltado para a moda feminina, foi meticulosamente projetada para proporcionar uma experiência de compra única e envolvente.',
+  //   srcImg: '/projects/ecommerce.png',
+  //   link: 'https://mined-development-company.github.io/E-commerce-FRONT/',
+  //   time: '05/02/2023, 3 meses de estudo',
+  //   skill: [
+  //     {
+  //       id: 6,
+  //       skill: 'javaScript',
+  //       img: '/skills/js.svg',
+  //     },
+  //     {
+  //       id: 8,
+  //       skill: 'HTML',
+  //       img: '/skills/html.svg',
+  //     },
+  //     {
+  //       id: 9,
+  //       skill: 'CSS',
+  //       img: '/skills/css.svg',
+  //     },
+  //   ],
+  // },
   {
     title: 'Git Info Search',
     text: 'É um site que simplifica a busca e visualização de informações de usuários no GitHub, fácil de usar, onde os usuários podem simplesmente digitar o nome de usuário do GitHub que desejam pesquisar. Em segundos, o GitInfoSearch varre a vasta base de dados do GitHub e fornece uma visão detalhada das informações públicas disponíveis sobre o perfil do usuário pesquisado.',

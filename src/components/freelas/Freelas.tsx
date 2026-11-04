@@ -51,45 +51,45 @@ const data = [
     ],
     link: 'https://www.captain-window.com/',
   },
-  {
-    id: 3,
-    img: '/freelas/proben.png',
-    name: 'Proben',
-    service: 'Front-end, design',
-    language: [
-      { skill: 'Next', img: '/skills/next.svg' },
-      { skill: 'Tailwind', img: '/skills/tailwind.svg' },
-      { skill: 'Typescript', img: '/skills/ts.svg' },
-      { skill: 'HTML', img: '/skills/html.svg' },
-    ],
-    link: 'https://proben-one.vercel.app/',
-  },
-  {
-    id: 2,
-    img: '/freelas/infinity.png',
-    name: 'Inifnity',
-    service: 'Front-end',
-    language: [
-      { skill: 'Next', img: '/skills/next.svg' },
-      { skill: 'Tailwind', img: '/skills/tailwind.svg' },
-      { skill: 'Typescript', img: '/skills/ts.svg' },
-      { skill: 'HTML', img: '/skills/html.svg' },
-    ],
-    link: 'https://infinity-ruby-one.vercel.app/',
-  },
-  {
-    id: 1,
-    img: '/freelas/futHoje.png',
-    name: 'FutHoje',
-    service: 'Front-end',
-    language: [
-      { skill: 'Next', img: '/skills/next.svg' },
-      { skill: 'Tailwind', img: '/skills/tailwind.svg' },
-      { skill: 'Typescript', img: '/skills/ts.svg' },
-      { skill: 'HTML', img: '/skills/html.svg' },
-    ],
-    link: 'https://futhoje.vercel.app/',
-  },
+  // {
+  //   id: 3,
+  //   img: '/freelas/proben.png',
+  //   name: 'Proben',
+  //   service: 'Front-end, design',
+  //   language: [
+  //     { skill: 'Next', img: '/skills/next.svg' },
+  //     { skill: 'Tailwind', img: '/skills/tailwind.svg' },
+  //     { skill: 'Typescript', img: '/skills/ts.svg' },
+  //     { skill: 'HTML', img: '/skills/html.svg' },
+  //   ],
+  //   link: 'https://proben-one.vercel.app/',
+  // },
+  // {
+  //   id: 2,
+  //   img: '/freelas/infinity.png',
+  //   name: 'Inifnity',
+  //   service: 'Front-end',
+  //   language: [
+  //     { skill: 'Next', img: '/skills/next.svg' },
+  //     { skill: 'Tailwind', img: '/skills/tailwind.svg' },
+  //     { skill: 'Typescript', img: '/skills/ts.svg' },
+  //     { skill: 'HTML', img: '/skills/html.svg' },
+  //   ],
+  //   link: 'https://infinity-ruby-one.vercel.app/',
+  // },
+  // {
+  //   id: 1,
+  //   img: '/freelas/futHoje.png',
+  //   name: 'FutHoje',
+  //   service: 'Front-end',
+  //   language: [
+  //     { skill: 'Next', img: '/skills/next.svg' },
+  //     { skill: 'Tailwind', img: '/skills/tailwind.svg' },
+  //     { skill: 'Typescript', img: '/skills/ts.svg' },
+  //     { skill: 'HTML', img: '/skills/html.svg' },
+  //   ],
+  //   link: 'https://futhoje.vercel.app/',
+  // },
 ];
 
 export const Freelances = () => {
@@ -103,11 +103,11 @@ export const Freelances = () => {
         }}
         className="w-full"
       >
-        <CarouselContent className="gap-2">
+        <CarouselContent className="gap-2 flex items-center justify-center">
           {data.map(({ id, img, service, name, language, link }) => (
             <CarouselItem
               key={id}
-              className="basis-[100%] min-[375px]:basis-[70%] sm:basis-[42%] lg:basis-[28%]"
+              className="basis-[100%] min-[375px]:basis-[70%] sm:basis-[42%] lg:basis-[32%]"
             >
               <CardFreelas
                 link={link}
